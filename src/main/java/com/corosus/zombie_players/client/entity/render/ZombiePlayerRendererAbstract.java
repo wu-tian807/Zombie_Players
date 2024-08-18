@@ -8,7 +8,6 @@ import com.corosus.zombie_players.entity.ZombiePlayer;
 import com.corosus.zombie_players.util.UtilProfile;
 import com.mojang.authlib.minecraft.MinecraftProfileTexture;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.HumanoidMobRenderer;
 import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
@@ -71,6 +70,4 @@ public abstract class ZombiePlayerRendererAbstract<T extends ZombiePlayer, M ext
    protected boolean isShaking(T p_113773_) {
       return super.isShaking(p_113773_) || p_113773_.isUnderWaterConverting();
    }
-
-
 }

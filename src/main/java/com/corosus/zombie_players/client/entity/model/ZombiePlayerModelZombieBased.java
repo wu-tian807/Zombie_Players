@@ -35,9 +35,9 @@ public class ZombiePlayerModelZombieBased<T extends Zombie> extends AbstractZomb
    @Override
    public void renderToBuffer(PoseStack p_102034_, VertexConsumer p_102035_, int p_102036_, int p_102037_, float p_102038_, float p_102039_, float p_102040_, float p_102041_) {
       float tintAdj = 0.6F;
-      float r = tintAdj;
-      float g = 0.8F;
-      float b = tintAdj - 0.15F;
+      float r = 117f/255f;
+      float g = 107f/255f;
+      float b = 107f/255f - 0.15f;
       super.renderToBuffer(p_102034_, p_102035_, p_102036_, p_102037_, r, g, b, p_102041_);
    }
 }

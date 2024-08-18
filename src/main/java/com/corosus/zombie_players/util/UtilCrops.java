@@ -63,7 +63,7 @@ public class UtilCrops {
                     if(!stack.isEmpty())
                         Block.popResource(world, pos, stack);
                 });
-        inWorld.spawnAfterBreak((ServerLevel) world, pos, copy);
+        inWorld.spawnAfterBreak((ServerLevel) world, pos, copy,true);
 
         BlockState newBlock = crops.get(inWorld);
         if (newBlock != null) {

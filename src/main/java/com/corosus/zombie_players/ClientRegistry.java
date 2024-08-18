@@ -14,7 +14,7 @@ public class ClientRegistry {
     @OnlyIn(Dist.CLIENT)
     @SubscribeEvent
     public static void registerRenderers(FMLClientSetupEvent event) {
-        EntityRenderers.register(EntityRegistry.zombie_player, render -> new ZombiePlayerRendererRouter(render));
+        EntityRenderers.register(EntityRegistry.zombie_player.get(), render -> new ZombiePlayerRendererRouter(render));
     }
 
 }

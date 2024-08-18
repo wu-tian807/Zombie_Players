@@ -76,7 +76,7 @@ public class ConfigZombiePlayers implements IConfigCategory {
 		}
 		Zombie_Players.zombiePlayerNames = names;
 
-		if (ConfigZombiePlayers.enableAdvancedDeveloperConfigFiles && !ConfigMod.instance.lookupRegistryNameToConfig.containsKey(Zombie_Players.configDev.getRegistryName())) {
+		if (ConfigZombiePlayers.enableAdvancedDeveloperConfigFiles) {
 			ConfigMod.addConfigFile(null, Zombie_Players.configDev);
 		}
 
@@ -96,7 +96,7 @@ public class ConfigZombiePlayers implements IConfigCategory {
 					} else {
 						Item item = ForgeRegistries.ITEMS.getValue(new ResourceLocation(names2[i]));
 						if (item != null && item != Items.AIR) {
-							CULog.dbg("adding: " + item.getRegistryName());
+							CULog.dbg("adding: " + item.toString());
 							Zombie_Players.listCalmingItems.add(item);
 						}
 					}

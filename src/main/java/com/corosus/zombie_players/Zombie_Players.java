@@ -35,6 +35,8 @@ public class Zombie_Players {
         MinecraftForge.EVENT_BUS.register(new EventHandlerForge());
         //ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, MovePlusCfgForge.CLIENT_CONFIG);
 
+        EntityRegistry.registerEntity();
+
         ConfigMod.addConfigFile(MODID, new ConfigZombiePlayers());
         ConfigMod.addConfigFile(MODID, configDev);
 
